@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
   // Declaración de variables
@@ -16,6 +17,12 @@ int main() {
 
   printf("Ingrese el plazo del préstamo (en meses): ");
   scanf("%d", &plazoPrestamo);
+
+  // Validación de datos (opcional)
+  if (montoPrestamo <= 0 || tasaInteresAnual <= 0 || plazoPrestamo <= 0) {
+    printf("Error: Los datos ingresados no son válidos.\n");
+    return 1;
+  }
 
   // Cálculo de la tasa de interés mensual
   float tasaInteresMensual = tasaInteresAnual / 1200;
@@ -40,4 +47,3 @@ int main() {
 
   return 0;
 }
-
