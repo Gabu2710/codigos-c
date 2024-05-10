@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "cabecera.h": "c",
+        "stdio.h": "c"
+    }
+}
